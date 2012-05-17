@@ -1,6 +1,6 @@
 #!/usr/bin/python
 #################################################################
-# Email Verifier v2.1											#
+# Email Verifier v2.2											#
 # By: Dennis Linuz <dennismald@gmail.com>						#
 # Verify if email addresses are valid by checking SMTP server   #
 #################################################################
