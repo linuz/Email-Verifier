@@ -1,0 +1,33 @@
+==========================================
+Email Verifier for Python, by Dennis Linuz
+==========================================
+This is a script to verify whether an email address is valid or not.
+
+It looks up the MX record for the host of the email and will connect to through SMTP to the host on port 25 to try and find out if the email address is valid.
+
+There is a chance for false positives. This is not always 100% accurate.
+
+NOTE! Most commercial ISPs will block port 25 so this may not work on your home network.
+
+Requirements:
+~~~~~~~~~~~~~
+	Python >= 2.7
+	dnspython 1.10.0 Libraries (www.dnspython.org)
+		'sudo apt-get install python-dnspython'
+
+Usage:
+~~~~~ 
+    python verify-email.py -e <email> -v
+
+Arguments:
+~~~~~~~~~~
+	-h or --help                    This help
+	-v or --verbose                 Increases verbosity
+	-e or --email <email>           Specify one email address to check
+	-f or --file <file>             Specify a file of emails delimeted by line
+
+Example:
+~~~~~~~~
+     python verify-email.py -e admin@example.org -v
+     python verify-email.py --file email.txt
+
