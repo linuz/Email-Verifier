@@ -17,7 +17,7 @@ Requirements:
 
 Usage:
 ~~~~~ 
-    python verify-email.py -e <email> -v
+    python email-verify.py -e <email> -v
 
 Arguments:
 ~~~~~~~~~~
@@ -28,6 +28,6 @@ Arguments:
 
 Example:
 ~~~~~~~~
-     python verify-email.py -e admin@example.org -v
-     python verify-email.py --file email.txt
+     python email-verify.py -e admin@example.org -v
+     python email-verify.py --file email.txt
 
